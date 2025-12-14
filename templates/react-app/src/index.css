@@ -1,0 +1,143 @@
+body{
+  background: #f4f7ff !important;
+}
+
+.MuiAlert-message.css-zioonp-MuiAlert-message{
+  width: 100%;
+}
+
+.btnCloseAlert{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.bodyAlert{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+/*swiper slider*/
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden.mySwiper {
+  height: 50vh;
+}
+.show-text-slider{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px 20px;
+  box-sizing: border-box
+}
+.carousel-slide__wrapper{
+  position: relative
+}
+
+.carousel-slide__image{
+  width: 100%;
+  display: block;
+}
+.carousel-slide__title{
+  margin: 0;
+}
+.carousel-slide__description{
+  margin: 0;
+}
+.custom-form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px !important;
+}
+.wrapperInput{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+
+.welcome-header h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.feature {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.feature h2 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.feature p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.circle-text {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-text span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0 100px;
+}
+
+
+

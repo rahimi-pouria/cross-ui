@@ -1,0 +1,14 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #1f2937;
+    --primary-color: #3b82f6;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none !important;
+    color: #4a8cf3;
+}

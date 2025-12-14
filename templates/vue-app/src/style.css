@@ -1,0 +1,32 @@
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  background: #ffffff !important;
+}
+:deep(.fc-event) {
+    padding: 4px 8px !important;
+    line-height: 1.4;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+li{
+    list-style: none;
+}
+
+.fc .fc-timegrid-slot {
+    padding: 25px 0;
+}
+
+.bg-black-footer{
+    background-color: #FDFDFDFF !important;
+    color: #000 !important;
+}

@@ -1,0 +1,26 @@
+import type { PropType } from "vue";
+
+export const customAccordion = {
+    id: { type: String, required: false, default: '' },
+    visible: { type: Boolean, required: false, default: false },
+    modelValue: { type: Boolean, required: false, default: false },
+    show: { type: Boolean, required: false, default: false },
+    title: { type: String, required: true },
+    description: { type: String, required: false, default: '' },
+    customClass: { type: String, required: false, default: '' },
+    buttonClass: { type: [String, Array, Object] as PropType<any>, required: false, default: '' },
+    bodyClass: { type: [String, Array, Object] as PropType<any>, required: false, default: '' },
+    collapseClass: { type: [String, Array, Object] as PropType<any>, required: false, default: '' },
+    headerClass: { type: [String, Array, Object] as PropType<any>, required: false, default: '' },
+    bodyStyle: { type: [String, Object] as PropType<string | Record<string, string>>, required: false, default: '' },
+    buttonAttrs: { type: Object as PropType<Readonly<Record<string, unknown>>>, required: false, default: () => ({}) },
+    bodyAttrs: { type: Object as PropType<Readonly<Record<string, unknown>>>, required: false, default: () => ({}) },
+    headerAttrs: { type: Object as PropType<Readonly<Record<string, unknown>>>, required: false, default: () => ({}) },
+    wrapperAttrs: { type: Object as PropType<Readonly<Record<string, unknown>>>, required: false, default: () => ({}) },
+    headerTag: { type: String, required: false, default: 'h2' },
+    tag: { type: String, required: false, default: 'div' },
+    horizontal: { type: Boolean, required: false, default: false },
+    isNav: { type: Boolean, required: false, default: false },
+    lazy: { type: Boolean, required: false, default: false },
+    unmountLazy: { type: Boolean, required: false, default: false },
+};
