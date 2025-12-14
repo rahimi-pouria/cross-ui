@@ -16,7 +16,7 @@ export type itemTabs = {
     description: string,
 }
 
-export const customTabs = {
+export const customTabsProps = {
     active: { type: Boolean as PropType<boolean>, default: false },
     buttonId: { type: String as PropType<string>, default: '' },
     disabled: { type: Boolean as PropType<boolean>, default: false },

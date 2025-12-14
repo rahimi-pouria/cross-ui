@@ -83,7 +83,4 @@ With wrapperAttrs, you can pass arbitrary attributes (such as data-*, classes, e
       body-class="p-3 bg-light"
       :body-style="{ border: '1px solid #ccc' }"
       header-tag="h3"
-  >
-    <template #body>
-      <p>This is the accordion content with custom slot.</p>
-    </template>
+   />

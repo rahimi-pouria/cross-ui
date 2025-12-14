@@ -29,8 +29,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CloseBold, View, Hide } from '@element-plus/icons-vue'
-import { customInputProps } from "@/props/customInput.ts";
+import { customInputProps } from "@/props/bootstrap/customInput";
 import { useVModelSync } from "@/composables/useVModelSync.ts";
 import {computed, ref} from "vue";
 import useVuelidate from "@vuelidate/core";

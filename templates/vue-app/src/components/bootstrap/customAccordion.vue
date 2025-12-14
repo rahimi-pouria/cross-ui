@@ -15,10 +15,10 @@
 
 
 <script setup lang="ts">
-import { customAccordion } from "@/props/bootstrap/customAccordion";
+import { customAccordionProps } from "@/props/bootstrap/customAccordion";
 import { BAccordion, BAccordionItem } from 'bootstrap-vue-next'
 
-const props = defineProps(customAccordion)
+const props = defineProps(customAccordionProps)
 
 </script>
 <style scoped>

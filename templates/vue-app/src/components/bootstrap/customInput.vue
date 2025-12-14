@@ -1,6 +1,6 @@
 <template>
     <div :class="customClass" class="input-icon-eye">
-      <label for="input-small" v-if="title" :class='[labelClass]' >
+      <label for="input-small" v-if="title" :class='labelClass' >
         <span :class="(required || requiredIf) && 'required'">{{ t(title) }} :</span>
       </label>
       <BFormInput :title="titleToolTip" hide-details="auto" v-model="model" :id="id" :state="v$.model.$dirty ? !v$.model.$invalid : null" :disabled="disabled"
@@ -11,7 +11,7 @@
       <template v-if="inputType === 'password' && canShowPassword">
         <span class="p-2 border-0 icon-pass">
           <custom-button type-button="button" @click="changeType" variant="link-info"
-                         btn-class="btn btn-icon w-30px h-30px ms-auto">
+                         btn-class="btn btn-icon w-30px h-30px ms-auto" style="margin-right: 10px;">
            <template #icon>
                <i :class="showPassword ? 'bi bi-eye-slash' : 'bi bi-eye'"></i>
            </template>
@@ -58,15 +58,18 @@ const props = defineProps(customInputProps);
 defineEmits(['update:modelValue', 'keyup'])
 
 if (props.betweenValue) {
-  watch(() => model.value, (val) => {
-    if (!val)
+  watch(() => model, (val) => {
+    if (!val) {
       model.value = null;
+    }
   })
 }
 
+
+
 const rules = computed(() => ({
   model: {
-    required: props.required && !props.disabled ? helpers.withMessage(props.errorMandatory, fieldRequired) : '',
+    required: props.required && !props.disabled ? helpers.withMessage(`${props.title} Mandatory`, fieldRequired) : '',
     requiredIf: props.requiredIf && !props.disabled ? helpers.withMessage('ValueMandatory', fieldRequiredIf(props.requiredIf)) : '',
     numeric: props.numeric ? helpers.withMessage('OnlyNumericDataIsAllowed', numeric) : '',
     integer: props.integer ? helpers.withMessage('OnlyNonDecimalNumericDataIsAllowed', integer) : '',
@@ -88,7 +91,7 @@ const inputModel = reactive({
   model
 })
 
-const v$ = useVuelidate(rules, inputModel)
+const v$ = useVuelidate(rules, {model})
 
 const changeType = () => {
   showPassword.value = !showPassword.value
@@ -109,7 +112,7 @@ const changeType = () => {
 .icon-pass{
   position: absolute;
   right: 0;
-  top: 15px;
+  top: 23px;
 }
 
 html[dir="rtl"] .icon-pass {

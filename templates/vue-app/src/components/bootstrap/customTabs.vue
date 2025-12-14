@@ -10,13 +10,13 @@
 </template>
 
 <script setup lang="ts">
-import { customTabs } from "@/props/customTabs.ts";
+import { customTabsProps } from "@/props/bootstrap/customTabs";
 import { BTabs, BTab } from 'bootstrap-vue-next'
 import {ref} from "vue";
 import {useI18n} from "vue-i18n";
 const { t } = useI18n()
 
-const props = defineProps(customTabs)
+const props = defineProps(customTabsProps)
 
 const activeTab = ref()
 

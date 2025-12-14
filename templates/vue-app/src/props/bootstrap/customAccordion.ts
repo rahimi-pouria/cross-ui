@@ -1,6 +1,6 @@
 import type { PropType } from "vue";
 
-export const customAccordion = {
+export const customAccordionProps = {
     id: { type: String, required: false, default: '' },
     visible: { type: Boolean, required: false, default: false },
     modelValue: { type: Boolean, required: false, default: false },
