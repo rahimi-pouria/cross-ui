@@ -4,7 +4,6 @@ export interface faqItemProps {
     id: number;
     title: string;
     description: string;
-
 }
 
 export const faqType = {

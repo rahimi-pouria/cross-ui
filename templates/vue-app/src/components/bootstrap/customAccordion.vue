@@ -1,6 +1,7 @@
 <template>
   <BAccordion v-bind="wrapperAttrs">
-    <BAccordionItem :id="props.id" :title="props.title" :visible="props.visible || props.modelValue || props.show" :class="props.customClass"
+    <BAccordionItem :id="props.id" :title="props.title" :visible="props.visible || props.modelValue || props.show"
+                    :class="props.customClass"
         :button-class="props.buttonClass" :body-class="props.bodyClass" :body-style="props.bodyStyle" :collapse-class="props.collapseClass"
         :header-class="props.headerClass" :header-tag="props.headerTag" :button-attrs="props.buttonAttrs"
         :body-attrs="props.bodyAttrs" :header-attrs="props.headerAttrs" :horizontal="props.horizontal"
@@ -21,8 +22,6 @@ import { BAccordion, BAccordionItem } from 'bootstrap-vue-next'
 const props = defineProps(customAccordionProps)
 
 </script>
-<style scoped>
-.accordion{
-  width: 100% !important;
-}
+<style>
+
 </style>

@@ -7,7 +7,7 @@ export const customAccordionProps = {
     show: { type: Boolean, required: false, default: false },
     title: { type: String, required: true },
     description: { type: String, required: false, default: '' },
-    customClass: { type: String, required: false, default: '' },
+    customClass: { type: String, required: false, default: 'w-100' },
     buttonClass: { type: [String, Array, Object] as PropType<any>, required: false, default: '' },
     bodyClass: { type: [String, Array, Object] as PropType<any>, required: false, default: '' },
     collapseClass: { type: [String, Array, Object] as PropType<any>, required: false, default: '' },
