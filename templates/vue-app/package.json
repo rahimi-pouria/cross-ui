@@ -29,11 +29,14 @@
     "bootstrap-vue-next": "^0.40.8",
     "chart.js": "^4.5.1",
     "dayjs": "^1.11.19",
+    "isotope-layout": "^3.0.6",
     "sweetalert2": "^11.23.0",
+    "swiper": "^12.0.3",
     "vue": "^3.5.21",
     "vue-flatpickr-component": "^12.0.0",
     "vue-i18n": "9.14.5",
-    "vue-router": "^4.6.3"
+    "vue-router": "^4.6.3",
+    "vue3-isotope": "^4.0.1"
   },
   "devDependencies": {
     "@mdi/font": "^7.4.47",

@@ -12,6 +12,8 @@ export type formOptionType = {
 
 export const customFormProps = {
     id: {type: String as PropType<string>, required: true, default: ''},
+    title: {type: String as PropType<string>, required: true, default: 'Login'},
     formOptions: {type: Array as PropType<formOptionType[]>, required: true, default: () => {}},
     customClassWrapperForm: {type: String as PropType<string>, required: false, default: ''},
+    customClassWrapperTitle: {type: String as PropType<string>, required: false, default: 'd-flex w-100 justify-content-center align-items-center'},
 }

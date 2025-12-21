@@ -5,24 +5,19 @@
         <p :class="customClassDescription">{{ description }}</p>
       </div>
       <div :class="customClassWrapperServiceCard">
-        <div class="col-md-4" v-for="item in serviceItems" :key="item.id">
-          <div class="card h-100 text-center border-0 shadow-sm">
-            <!-- آیکن -->
-            <div class="d-flex justify-content-center mt-4">
-              <div class="bg-dark text-white rounded-circle p-3">
-                <i :class="item.iconClass" style="font-size: 1.5rem;"></i>
+        <div v-for="item in serviceItems" :key="item.id" :class="customClassBodyCard">
+          <div :class="customClassCardSection">
+            <div :class="customClassCardHeader">
+              <div :class="customClassCircleIcon">
+                <img src="" :class="customClassIcon" alt="">
               </div>
             </div>
-
-            <!-- عنوان و متن -->
-            <div class="card-body">
-              <h5 class="card-title fw-bold mt-3">{{ item.title }}</h5>
-              <p class="card-text text-muted">{{ item.description }}</p>
+            <div :class="customClassCardBody">
+              <h5 :class="customClassCardTitle">{{ item.title }}</h5>
+              <p :class="customClassDescriptionCard">{{ item.description }}</p>
             </div>
-
-            <!-- دکمه بیشتر -->
-            <div class="card-footer bg-transparent border-0 mb-3">
-              <router-link :to="item.link" class="btn btn-outline-dark btn-sm">MORE</router-link>
+            <div :class="customClassCardFooter">
+              <router-link :to="item.link" :class="customClassLinkCard">{{ labelLink }}</router-link>
             </div>
           </div>
         </div>
@@ -32,7 +27,6 @@
 
 <script setup lang="ts">
 import { ServicesProps } from '@/props/bootstrap/sctions/Services';
-import { customCardProps } from '@/props/bootstrap/customCard'
 
 const props = defineProps({
   ...ServicesProps,

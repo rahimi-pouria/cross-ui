@@ -1,5 +1,10 @@
 <template>
   <form :class="customClassWrapperForm">
+    <div :class="customClassWrapperTitle">
+      <h4>
+        <span>{{ title }}</span>
+      </h4>
+    </div>
     <CustomInput v-for="(item) in formOptions" :key="item.id" :id="item.id" v-model="formModel[item.id]"
                  :input-type="item.typeInput" :placeholder="item.placeholder"
                  :required="item.required" :title="item.name" :label-class="labelClass" :custom-class="customClass" />
