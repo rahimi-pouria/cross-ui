@@ -17,7 +17,7 @@
 </template>
 
 <script lang="ts" setup>
-import {customTabsProps} from "@/props/customTabs.ts";
+import {customTabsProps} from "@/props/elementPlus/customTabs.ts";
 
 const props = defineProps({
   ...customTabsProps

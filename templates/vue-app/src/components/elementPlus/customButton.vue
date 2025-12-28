@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import { customButtonProps } from "@/props/bootstrap/customButton";
+import { customButtonProps } from "@/props/elementPlus/customButton";
 
 const props = defineProps({ ...customButtonProps })
 const emit = defineEmits(['click', 'updateModelValue'])

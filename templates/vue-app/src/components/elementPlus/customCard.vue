@@ -28,8 +28,8 @@
 <script setup lang="ts">
 
 import CustomButton from "@/components/customButton.vue";
-import { customCardProps } from "@/props/customCard.ts";
-import { customButtonProps } from "@/props/customButton.ts";
+import { customCardProps } from "@/props/elementPlus/customCard.ts";
+import { customButtonProps } from "@/props/elementPlus/customButton.ts";
 
 const props = defineProps({
   ...customCardProps,

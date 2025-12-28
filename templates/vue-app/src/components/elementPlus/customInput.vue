@@ -29,7 +29,7 @@
 </template>
 
 <script lang="ts" setup>
-import { customInputProps } from "@/props/bootstrap/customInput";
+import { customInputProps } from "@/props/elementPlus/customInput";
 import { useVModelSync } from "@/composables/useVModelSync.ts";
 import {computed, ref} from "vue";
 import useVuelidate from "@vuelidate/core";

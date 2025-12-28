@@ -15,9 +15,9 @@
 </template>
 
 <script setup lang="ts">
-import { customDropdownProps } from "@/props/customDropdown.ts";
+import { customDropdownProps } from "@/props/elementPlus/customDropdown.ts";
 import CustomButton from "@/components/customButton.vue";
-import { customButtonProps } from "@/props/customButton.ts";
+import { customButtonProps } from "@/props/elementPlus/customButton.ts";
 
 const props = defineProps({
   ...customDropdownProps,

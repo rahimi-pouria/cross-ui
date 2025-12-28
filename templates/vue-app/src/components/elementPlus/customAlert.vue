@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import { customAlertProps } from "@/props/customAlert.ts";
+import { customAlertProps } from "@/props/elementPlus/customAlert.ts";
 
 const props = defineProps(customAlertProps)
 </script>

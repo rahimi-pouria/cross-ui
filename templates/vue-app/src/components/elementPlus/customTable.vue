@@ -24,10 +24,10 @@
 </template>
 
 <script lang="ts" setup>
-import { customTableProps } from "@/props/customTable.ts";
+import { customTableProps } from "@/props/elementPlus/customTable.ts";
 import {computed} from "vue";
 import CustomInput from "@/components/elementPlus/customInput.vue";
-import { customInputProps } from "@/props/customInput.ts";
+import { customInputProps } from "@/props/elementPlus/customInput.ts";
 
 const props = defineProps({
   ...customTableProps,

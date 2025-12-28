@@ -16,9 +16,9 @@
 </template>
 
 <script lang="ts" setup>
-import { customModalProps } from "@/props/customModal.ts"
+import { customModalProps } from "@/props/elementPlus/customModal.ts"
 import CustomButton from "@/components/customButton.vue"
-import { customButtonProps } from "@/props/customButton.ts";
+import { customButtonProps } from "@/props/elementPlus/customButton.ts";
 import {ref, watch} from "vue";
 
 const props = defineProps({

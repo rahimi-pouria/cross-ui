@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts" setup>
-import { customAccordionProps } from "@/props/customAccordion.ts";
+import { customAccordionProps } from "@/props/elementPlus/customAccordion.ts";
 
 const props = defineProps({
   ...customAccordionProps

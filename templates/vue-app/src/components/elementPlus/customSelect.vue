@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts" setup>
-import { customSelectProps } from "@/props/customSelect.ts";
+import { customSelectProps } from "@/props/elementPlus/customSelect.ts";
 import {useVModelSync} from "@/composables/useVModelSync.ts";
 import { useI18n } from "vue-i18n";
 import {computed} from "vue";

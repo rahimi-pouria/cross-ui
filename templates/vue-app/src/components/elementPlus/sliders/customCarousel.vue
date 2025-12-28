@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import { customCarouselProps } from "@/props/customCarousel.ts";
+import { customCarouselProps } from "@/props/elementPlus/customCarousel.ts";
 
 const props = defineProps({
   ...customCarouselProps
