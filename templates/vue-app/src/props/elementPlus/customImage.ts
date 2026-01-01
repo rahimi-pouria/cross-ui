@@ -12,7 +12,8 @@ export const customImageProps = {
     zoomRate: { type: Number as PropType<number>, default: 0 },
     maxScale: { type: Number as PropType<number>, default: 0 },
     minScale: { type: Number as PropType<number>, default: 0 },
-    showProgress: { type: Boolean as PropType<boolean>, default: false },
-    initialIndex: { type: Number as PropType<number>, default: 0 },
+    showProgress: { type: Boolean as PropType<boolean>, required: false, default: false },
+    initialIndex: { type: Number as PropType<number>, required: false, default: 0 },
     previewSrcList: { type: Array as PropType<PreviewSrcListType>, default: () => [] },
+
 };

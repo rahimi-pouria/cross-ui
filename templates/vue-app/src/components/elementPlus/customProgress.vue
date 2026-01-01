@@ -1,10 +1,7 @@
 <template>
-  <el-progress
-      :text-inside="true"
-      :stroke-width="24"
-      :percentage="100"
-      status="success"
-  />
+  <el-progress :id="idProgress" :text-inside="textInside" :stroke-width="strokeWidthProgress" :percentage="percentageProgress"
+      :status="statusProgress" :striped="stripedProgress" :striped-flow="stripedFlowProgress" :duration="durationProgress"
+            :indeterminate="indeterminateProgress"  :color="colorProgress"/>
 </template>
 
 <script setup lang="ts">
@@ -13,6 +10,8 @@
   const props = defineProps({
     ...customProgressProps,
   })
+
+
 </script>
 
 <style scoped lang="scss">

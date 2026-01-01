@@ -19,6 +19,7 @@ export const customButtonProps = {
     dataDropdownToggle: { type: String as PropType<string>, default: undefined },
     dataModalToggle: {type: String as PropType<string>, default: undefined},
     dataDismissTarget: {type: String as PropType<string>, default: undefined},
+    plainBtn: {type: Boolean as PropType<boolean>,required: false, default: false},
 
 
 }

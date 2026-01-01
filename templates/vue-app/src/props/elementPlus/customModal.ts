@@ -17,4 +17,6 @@ export const customModalProps = {
     customWithModal: {type:  [String, Number ] as PropType<string | number>, default: '800'},
     typeBtnConfirm: {type: String as PropType<'primary' | 'success' | 'warning' | 'danger' | 'info' | 'text'>, default: 'primary'},
     typeBtnCancel: {type: String as PropType<'primary' | 'success' | 'warning' | 'danger' | 'info' | 'text'>, default: 'primary'},
+    showVisibleModal: {type: Boolean as PropType<boolean>, required: false, default: true},
+    showFooterModal: {type: Boolean as PropType<boolean>, required: false, default: true},
 }

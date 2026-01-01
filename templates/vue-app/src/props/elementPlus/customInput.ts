@@ -16,4 +16,5 @@ export const customInputProps = {
     customClassWrapperInput: {type: String as PropType<string>, default: ''},
     required: { type: Boolean as PropType<boolean>, default: false },
     customValidationTitle: {type: String as PropType<string>, default: ''},
+    modelValue: {type: String as PropType<string> ,required: true, default: ''},
 }

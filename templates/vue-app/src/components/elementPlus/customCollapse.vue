@@ -1,47 +1,9 @@
 <template>
-  <el-collapse v-model="activeNames" @change="handleChange">
-    <el-collapse-item title="Consistency" name="1">
-      <div>
-        Consistent with real life: in line with the process and logic of real
-        life, and comply with languages and habits that the users are used to;
-      </div>
-      <div>
-        Consistent within interface: all elements should be consistent, such
-        as: design style, icons and texts, position of elements, etc.
-      </div>
-    </el-collapse-item>
-    <el-collapse-item title="Feedback" name="2">
-      <div>
-        Operation feedback: enable the users to clearly perceive their
-        operations by style updates and interactive effects;
-      </div>
-      <div>
-        Visual feedback: reflect current state by updating or rearranging
-        elements of the page.
-      </div>
-    </el-collapse-item>
-    <el-collapse-item title="Efficiency" name="3">
-      <div>
-        Simplify the process: keep operating process simple and intuitive;
-      </div>
-      <div>
-        Definite and clear: enunciate your intentions clearly so that the
-        users can quickly understand and make decisions;
-      </div>
-      <div>
-        Easy to identify: the interface should be straightforward, which helps
-        the users to identify and frees them from memorizing and recalling.
-      </div>
-    </el-collapse-item>
-    <el-collapse-item title="Controllability" name="4">
-      <div>
-        Decision making: giving advice about operations is acceptable, but do
-        not make decisions for the users;
-      </div>
-      <div>
-        Controlled consequences: users should be granted the freedom to
-        operate, including canceling, aborting or terminating current
-        operation.
+  <el-collapse v-model="activeNames" :class="customClassWrapperCollapse" :accordion="accordionCollapse">
+    <el-collapse-item v-for="(item) in collapseItem" @change="handleChange(item.id)" :key="item.id" :title="collapseItem ? item.title : titleCollapse" :name="collapseItem ?  item.nameCollapse : nameCollapse">
+      <slot v-if="$slots[`customBody${item.id}`]" :name="`customBody${item.id}`" />
+      <div v-else :class="customClassDescriptionCollapse">
+        {{ collapseItem ? item.description : descriptionCollapse }}
       </div>
     </el-collapse-item>
   </el-collapse>
@@ -49,17 +11,16 @@
 
 <script setup lang="ts">
 import { customCollapseProps } from "@/props/elementPlus/customCollapse";
-import type { CollapseModelValue } from 'element-plus'
 import { ref } from 'vue'
 
 const props = defineProps({
   ...customCollapseProps
 })
 
-const activeNames = ref(['1'])
-const handleChange = (val: CollapseModelValue) => {
-  console.log(val)
-}
+const activeNames = ref(props.modelValue)
+
+const emit = defineEmits(['update:modelValue', "change"])
+const handleChange = (val: any) => emit("change", val)
 
 </script>
 

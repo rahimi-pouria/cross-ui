@@ -3,7 +3,7 @@
     {{ titleBtn }}
   </router-link>
 
-  <el-button v-else :type="type" :native-type="nativeType" :class="customClassBtn" :size="size" @click="click">
+  <el-button v-else :type="type" :native-type="nativeType" :plain="plainBtn" :class="customClassBtn" :size="size" @click="click">
     <slot name="customBody">
       {{ titleBtn }}
     </slot>

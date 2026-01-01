@@ -35,7 +35,6 @@ watch(text, (newVal) => {
 const click = (params: any) => {
   emit('click', params);
   emit('update:modelValue', !props.modelValue);
-
 };
 
 
