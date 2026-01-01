@@ -1,21 +1,10 @@
 <template>
   <div class="text">
-    <custom-form />
+    pouria
   </div>
 </template>
 
 <script setup lang="ts">
-import {ref} from "vue";
-import useVuelidate from '@vuelidate/core'
-import CustomForm from "@/components/elementPlus/customForm.vue";
-const v$ = useVuelidate()
-
-
-const search =  async () => {
-  console.log('search');
-  const isFormCorrect = await v$.value.$validate()
-  if (!isFormCorrect) return
-}
 
 
 </script>
