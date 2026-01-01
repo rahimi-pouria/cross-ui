@@ -1,6 +1,6 @@
 <template>
   <el-card :class="customClassCard"  class="card-element-plus">
-    <img :src="props.srcImg" :alt="altImg" :class="customClassImageCard" class="img-card"/>
+    <custom-image :src-img="props.srcImg" :alt-image="altImg" :custom-class-image="['img-card', customClassImageCard]" />
     <template v-if="headerContent" #header>
       <div class="card-header" :class="customClassHeader">
         <span :class="customClassTextHeader">{{ headerContent }}</span>
@@ -30,10 +30,13 @@
 import CustomButton from "@/components/customButton.vue";
 import { customCardProps } from "@/props/elementPlus/customCard.ts";
 import { customButtonProps } from "@/props/elementPlus/customButton.ts";
+import CustomImage from "@/components/elementPlus/customImage.vue";
+import { customImageProps } from "@/props/elementPlus/customImage";
 
 const props = defineProps({
   ...customCardProps,
-  ...customButtonProps
+  ...customButtonProps,
+  ...customImageProps
 })
 
 const emit = defineEmits(['click', 'updateModelValue'])
