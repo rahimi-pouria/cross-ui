@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
-import {CustomCarouselProps} from "@/props/reactBootstrap/customCarousel";
+import {CustomCarouselProps} from "@/props/bootstrap/customCarousel";
 import CustomButton from "../CustomButton";
-import { customButtonProps } from "@/props/reactBootstrap/customButton";
+import { customButtonProps } from "@/props/bootstrap/customButton";
 type customAllProps = CustomCarouselProps & customButtonProps
 
 const CustomCarousel = (props: customAllProps) => {

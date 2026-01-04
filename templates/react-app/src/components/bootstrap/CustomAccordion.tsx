@@ -1,5 +1,5 @@
 import Accordion from 'react-bootstrap/Accordion';
-import { customAccordion } from "@/props/reactBootstrap/CustomAccordion";
+import { customAccordion } from "@/props/bootstrap/CustomAccordion";
 
 const CustomAccordion = (props: customAccordion) => {
     return (

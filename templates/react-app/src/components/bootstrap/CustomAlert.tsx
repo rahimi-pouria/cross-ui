@@ -1,8 +1,8 @@
 import Alert from 'react-bootstrap/Alert';
 import { useState } from "react";
-import { customAlertProps } from "@/props/reactBootstrap/customAlert";
+import { customAlertProps } from "@/props/bootstrap/customAlert";
 import CustomButton from "./CustomButton";
-import { customButtonProps } from "@/props/reactBootstrap/customButton";
+import { customButtonProps } from "@/props/bootstrap/customButton";
 
 type CustomAlertProps = customAlertProps & customButtonProps;
 

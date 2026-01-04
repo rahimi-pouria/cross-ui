@@ -1,5 +1,5 @@
 import Form from 'react-bootstrap/Form';
-import {customSelectProps} from  "@/props/reactBootstrap/customSelect";
+import {customSelectProps} from  "@/props/bootstrap/customSelect";
 import {useState} from "react";
 import * as React from "react";
 

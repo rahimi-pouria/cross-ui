@@ -1,5 +1,5 @@
 import Button from 'react-bootstrap/Button';
-import { customButtonProps } from "@/props/reactBootstrap/customButton";
+import { customButtonProps } from "@/props/bootstrap/customButton";
 
 const CustomButton  = (props: customButtonProps) => {
     return (

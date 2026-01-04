@@ -1,5 +1,5 @@
 import Form from 'react-bootstrap/Form';
-import { customInputProps } from "../../props/reactBootstrap/customInput";
+import { customInputProps } from "../../props/bootstrap/customInput";
 import { Eye, EyeSlash } from "react-bootstrap-icons";
 import {useState} from "react";
 import * as React from "react";

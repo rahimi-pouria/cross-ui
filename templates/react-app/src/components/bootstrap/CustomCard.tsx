@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import CustomButton from "./CustomButton";
-import { customButtonProps } from "@/props/reactBootstrap/customButton";
-import { CustomCardProps } from "@/props/reactBootstrap/CustomCard";
+import { customButtonProps } from "@/props/bootstrap/customButton";
+import { CustomCardProps } from "@/props/bootstrap/CustomCard";
 
 type CustomAllProps = CustomCardProps & customButtonProps;
 

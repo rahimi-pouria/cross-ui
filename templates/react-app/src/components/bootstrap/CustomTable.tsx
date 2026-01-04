@@ -1,7 +1,7 @@
 import Table from 'react-bootstrap/Table';
 import Pagination from 'react-bootstrap/Pagination';
 import { useState } from 'react';
-import { customTableProps } from "@/props/reactBootstrap/customTable";
+import { customTableProps } from "@/props/bootstrap/customTable";
 
 const CustomTable = (props: customTableProps) => {
     const [activePage, setActivePage] = useState(props.activePage);

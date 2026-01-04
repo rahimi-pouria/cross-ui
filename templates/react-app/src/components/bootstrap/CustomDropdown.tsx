@@ -1,5 +1,5 @@
 import Dropdown from 'react-bootstrap/Dropdown';
-import {customDropdownProps} from "@/props/reactBootstrap/customDropdown";
+import {customDropdownProps} from "@/props/bootstrap/customDropdown";
 
 
 const CustomDropdown = (props: customDropdownProps) => {
