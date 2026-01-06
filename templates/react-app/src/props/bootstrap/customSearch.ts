@@ -1,3 +1,7 @@
+import * as React from "react";
+
 export interface customSearchProps {
-    idSearch: string
+    idSearch: string,
+    customClassWrapperSearch: string,
+    children?: React.ReactNode
 }

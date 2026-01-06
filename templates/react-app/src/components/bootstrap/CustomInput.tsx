@@ -1,5 +1,5 @@
 import Form from 'react-bootstrap/Form';
-import { customInputProps } from "../../props/bootstrap/customInput";
+import { customInputProps } from "@/props/bootstrap/customInput";
 import { Eye, EyeSlash } from "react-bootstrap-icons";
 import {useState} from "react";
 import * as React from "react";
@@ -30,23 +30,32 @@ const CustomInput = (props: customInputProps) => {
             props.onValueChange(props.idInput, val, !err);
         }
     };
+
     return (
         <>
-            <Form.Label htmlFor={props.idInput} className={`d-flex justify-start ${props.customClassLabel}`}>{props.label}</Form.Label>
-            <Form.Control type={isPasswordVisible ? 'text' : props.typeInput} id={props.idInput}
-                          className={`${props.customClassInput} ${error || props.showError ? 'is-invalid' : ''}`}
-                          aria-describedby={props.idInput}
-                          required={props.required}
-                          onChange={handleChange}
-                          value={value}
-                          color={error || props.showError ? "failure" : "gray"}
+            <Form.Label htmlFor={props.idInput} className={`d-flex justify-start ${props.customClassLabel}`}>
+                {props.label}
+            </Form.Label>
+
+            <Form.Control
+                type={isPasswordVisible ? 'text' : props.typeInput}
+                id={props.idInput}
+                className={`${props.customClassInput} ${error || props.showError ? 'is-invalid' : ''}`}
+                required={props.required}
+                onChange={handleChange}
+                value={value}
             />
-            {props.typeInput === 'password' &&(
-                <span onClick={togglePassword} className={`icon-show-pass ${props.customIconEye}`}
-                      style={{position: "absolute", right: "2%", top: "5.5%", transform: "translateY(-50%)", cursor: "pointer", color: "#555",}}>
-                {isPasswordVisible ? <EyeSlash/> : <Eye/>}
-            </span>
+
+            {props.typeInput === 'password' && (
+                <span
+                    onClick={togglePassword}
+                    className={`icon-show-pass ${props.customIconEye}`}
+                    style={{ position: "absolute", right: "2%", top: "5.5%", transform: "translateY(-50%)", cursor: "pointer", color: "#555" }}
+                >
+                    {isPasswordVisible ? <EyeSlash/> : <Eye/>}
+                </span>
             )}
+
             {error && (
                 <div className="text-danger mt-1" style={{ fontSize: "0.9rem" }}>
                     {error}

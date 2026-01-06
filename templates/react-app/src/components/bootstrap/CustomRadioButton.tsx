@@ -1,5 +1,5 @@
 import Form from 'react-bootstrap/Form';
-import { customRadioButtonProps } from "../../props/bootstrap/customRadioButton";
+import { customRadioButtonProps } from "@/props/bootstrap/customRadioButton";
 
 const CustomRadioButton = (props: customRadioButtonProps) => {
     return (

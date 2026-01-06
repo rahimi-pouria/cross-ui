@@ -1,5 +1,5 @@
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import { customBreadcrumbsProps } from "../../props/bootstrap/customBreadcrumbs";
+import { customBreadcrumbsProps } from "@/props/bootstrap/customBreadcrumbs";
 import { Link } from 'react-router-dom';
 
 const CustomBreadcrumbs = (props: customBreadcrumbsProps) => {

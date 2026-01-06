@@ -1,15 +1,19 @@
 import Tooltip from 'react-bootstrap/Tooltip';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-
-import CustomButton from "./CustomButton";
-const CustomTooltip  = () => {
+import Popover from 'react-bootstrap/Popover';
+import { customTooltipProps } from "@/props/bootstrap/customTooltip";
+const CustomTooltip  = (props: customTooltipProps) => {
     return (
         <>
-            <OverlayTrigger
-                placement="right"
-                delay={{ show: 250, hide: 400 }}
-            >
-                <CustomButton variant={'success'} title={'Hover me to see'}/>
+            <OverlayTrigger show={props.showTooltip} placement={props.placementTooltip} delay={{ show: props.showDelay, hide: props.hideDelay }}
+                    overlay={
+                        <Tooltip id={props.idTooltip}>
+                            Tooltip on <strong>{props.titleTooltip}</strong>.
+                        </Tooltip>
+                    }>
+                <span className="d-inline-block">
+                    {props.children}
+                </span>
             </OverlayTrigger>
         </>
     )

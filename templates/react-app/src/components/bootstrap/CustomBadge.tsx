@@ -1,5 +1,5 @@
 import Badge from 'react-bootstrap/Badge';
-import { customBadgeProps } from "../../props/bootstrap/customBadge";
+import { customBadgeProps } from "@/props/bootstrap/customBadge";
 
 const CustomBadge = (props: customBadgeProps) => {
     return (

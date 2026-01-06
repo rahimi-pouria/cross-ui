@@ -1,5 +1,5 @@
 import Spinner from 'react-bootstrap/Spinner';
-import { customSpinnerProps } from "../../props/bootstrap/CustomSpinner";
+import { customSpinnerProps } from "@/props/bootstrap/CustomSpinner";
 
 const CustomSpinner = (props: customSpinnerProps) => {
     return (

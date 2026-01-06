@@ -1,8 +1,8 @@
 import Modal from 'react-bootstrap/Modal';
 import {useState} from "react";
 import CustomButton from "./CustomButton";
-import {customButtonProps} from "../../props/bootstrap/customButton";
-import {customModal} from "../../props/bootstrap/customModal";
+import {customButtonProps} from "@/props/bootstrap/customButton";
+import {customModal} from "@/props/bootstrap/customModal";
 
 type customAllProps = customButtonProps & customModal
 

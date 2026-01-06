@@ -1,5 +1,5 @@
 import Image from 'react-bootstrap/Image';
-import { customImageProps } from "../../props/bootstrap/customImage";
+import { customImageProps } from "@/props/bootstrap/customImage";
 
 
 const customImages = (props: customImageProps) => {

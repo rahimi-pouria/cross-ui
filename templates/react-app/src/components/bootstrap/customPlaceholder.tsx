@@ -1,5 +1,5 @@
 import Placeholder from 'react-bootstrap/Placeholder';
-import { customPlaceholderProps } from "../../props/bootstrap/customPlaceholder";
+import { customPlaceholderProps } from "@/props/bootstrap/customPlaceholder";
 
 const CustomPlaceholder = (props: customPlaceholderProps) => {
     return (

@@ -1,5 +1,5 @@
 import ProgressBar from 'react-bootstrap/ProgressBar';
-import {customProgressBarProps} from "../../props/bootstrap/customProgressBar";
+import {customProgressBarProps} from "@/props/bootstrap/customProgressBar";
 
 const CustomProgressBar = (props: customProgressBarProps) => {
     return (
