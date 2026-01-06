@@ -2,8 +2,8 @@ import * as React from 'react';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import CustomButton from "./CustomButton";
-import {CustomDropdownProps} from "@/props/materialUI/customDropdown";
-import {CustomButtonProps} from "@/props/materialUI/customButton";
+import {CustomDropdownProps} from "@/props/material/customDropdown";
+import {CustomButtonProps} from "@/props/material/customButton";
 
 type customAllProps = CustomDropdownProps & CustomButtonProps
 

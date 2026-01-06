@@ -1,6 +1,6 @@
 import * as React from 'react';
 import TextField from '@mui/material/TextField';
-import {CustomInputProps} from "@/props/materialUI/customInput";
+import {CustomInputProps} from "@/props/material/customInput";
 import {useState} from "react";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";

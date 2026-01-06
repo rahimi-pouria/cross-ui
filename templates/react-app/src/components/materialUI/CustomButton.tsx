@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
-import { CustomButtonProps } from "@/props/materialUI/customButton";
+import { CustomButtonProps } from "@/props/material/customButton";
 
 const CustomButton = (props: CustomButtonProps) => {
     return (

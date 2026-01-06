@@ -4,7 +4,7 @@ import { Autoplay, Pagination, Navigation, FreeMode,Thumbs } from 'swiper/module
 import 'swiper/css';
 import 'swiper/css/navigation';
 import '../../../index.css'
-import { CustomCarouselProps } from "@/props/materialUI/customCarousel";
+import { CustomCarouselProps } from "@/props/material/customCarousel";
 
 const CustomCarousel = (props: CustomCarouselProps) => {
 

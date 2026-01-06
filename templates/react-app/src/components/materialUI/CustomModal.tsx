@@ -5,8 +5,8 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import {useState} from "react";
 import CustomButton from "./CustomButton";
-import { CustomButtonProps } from "@/props/materialUI/customButton";
-import { CustomModalProps } from "@/props/materialUI/customModal";
+import { CustomButtonProps } from "@/props/material/customButton";
+import { CustomModalProps } from "@/props/material/customModal";
 
 type customAllProps = CustomButtonProps & CustomModalProps
 

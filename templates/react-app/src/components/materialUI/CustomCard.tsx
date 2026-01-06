@@ -4,9 +4,9 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CustomCardProps } from "../../props/materialUI/customCard";
+import { CustomCardProps } from "../../props/material/customCard";
 import CustomButton from "./CustomButton";
-import {CustomButtonProps} from "@/props/materialUI/customButton";
+import {CustomButtonProps} from "@/props/material/customButton";
 
 type customAllType = CustomCardProps & CustomButtonProps
 

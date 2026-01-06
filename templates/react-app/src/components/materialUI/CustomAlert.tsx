@@ -1,9 +1,9 @@
 import * as React from 'react';
 import Alert from '@mui/material/Alert';
 import {useState} from "react";
-import {CustomAlertProps} from "@/props/materialUI/customAlert";
+import {CustomAlertProps} from "@/props/material/customAlert";
 import CustomButton from "./CustomButton";
-import {CustomButtonProps} from "@/props/materialUI/customButton";
+import {CustomButtonProps} from "@/props/material/customButton";
 type customAllProps = CustomAlertProps & CustomButtonProps
 const CustomAlert = (props: customAllProps) => {
     const [open, setOpen] = useState(true)

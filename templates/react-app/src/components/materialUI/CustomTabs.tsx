@@ -4,7 +4,7 @@ import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
-import { CustomTabsProps } from "@/props/materialUI/customTabs";
+import { CustomTabsProps } from "@/props/material/customTabs";
 
 const CustomTabs = (props: CustomTabsProps) => {
     const firstId = props.itemTab.headerTab[0]?.id || "";

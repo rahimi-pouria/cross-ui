@@ -4,7 +4,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { customAccordionProps } from "@/props/materialUI/customAccordion";
+import { customAccordionProps } from "@/props/material/customAccordion";
 
 const CustomAccordion = (props: customAccordionProps & { expanded: boolean; onChange: (event: React.SyntheticEvent, isExpanded: boolean) => void; }) => {
     return (
