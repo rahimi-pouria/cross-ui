@@ -18,7 +18,7 @@
     "bootstrap": "^5.3.8",
     "flowbite": "^3.1.2",
     "flowbite-react": "^0.12.9",
-    "next": "15.5.3",
+    "next": "16.1.5",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-hook-form": "^7.63.0",
